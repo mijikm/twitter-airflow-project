@@ -22,10 +22,10 @@ import s3fs
 
 def run_twitter_etl():
 
-    access_key = "30esHxarcuNhKRrjwOE0wSDpa" # API Key
-    access_secret = "bs2AFbEYPSrAp9vYMO0JyTQULmJ3bEjkVA193DO0zOTTM2YO2Y"
-    consumer_key = "1323651046338555905-dfvYNXD4CPulPoPYwuF57namKPtGJ4" # Access Token
-    consumer_secret = "t8gDv5HROtk8q9LcE38I5RMXPG5ZrvnDvk2hObkFH5wqA"
+    access_key = "REMOVED" # API Key
+    access_secret = "REMOVED"
+    consumer_key = "REMOVED" # Access Token
+    consumer_secret = "REMOVED"
     # Function in tweepy package to do Twitter authentication 
     # to create connection between my code and twitter api
     auth = tweepy.OAuthHandler(access_key,access_secret)
@@ -65,7 +65,7 @@ def run_twitter_etl():
 
     df = pd.DataFrame(tweet_list)
     #df.to_csv("elonmusk_twitter_data.csv") # CSV file created in the local folder
-    df.to_csv("s3://mel-airflow-test-project-bucket/elonmusk_twitter_data.csv")
+    df.to_csv("s3://REMOVED/elonmusk_twitter_data.csv")
 
 
 # ## Step 2 Deploy the Code on Airflow/EC2
