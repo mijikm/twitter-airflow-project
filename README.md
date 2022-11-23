@@ -13,8 +13,8 @@ The purpose of this project is to build a data pipeline using Airflow and Python
 23 Nov 2022
 
 ### Code
-- `twitter_etl`: this contains the `run_twitter_etl` function which creates connection between the code and Twitter API and extracts data from it. The file also contains some steps and commands used to launch the airflow server, deploy the code, and triggers DAG.
-- `twitter_dag`: this creates DAG and triggers it using PythonOperator.
+- `twitter_etl.py`: this contains the `run_twitter_etl` function which creates connection between the code and Twitter API and extracts data from it. The file also contains some steps and commands used to launch the airflow server, deploy the code, and triggers DAG.
+- `twitter_dag.py`: this creates DAG and triggers it using PythonOperator.
 
 ### Data sources
 - Twitter
